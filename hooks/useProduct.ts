@@ -40,8 +40,19 @@ const useProduct = () => {
     if (!products) return []
     const uniqueCategories = new Set(products.map(product => product.category));
     const categoriesArray = Array.from(uniqueCategories);
+    console.log("ini category: " + categoriesArray.length);
     return categoriesArray
   }, [products]);
+
+//   const categories: string[] = useMemo(() => {
+//   if (!products || products.length === 0) return [];
+
+//   // Ambil kategori unik dari produk
+//   const uniqueCategories = Array.from(new Set(products.map(product => product.category)));
+
+//   console.log("Daftar kategori:", uniqueCategories);
+//   return uniqueCategories;
+// }, [products]); // Akan dieksekusi ulang hanya jika `products` berubah
 
   const productCategoryGroup: ProductCategoryGroup = useMemo(() => {
     const newGroup: ProductCategoryGroup = {};
