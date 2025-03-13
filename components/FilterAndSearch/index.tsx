@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import SearchIcon from "@/public/icons/search.svg";
 import FilterIcon from "@/public/icons/filter.svg";
-import useProduct from "@/hooks/useProduct";
 
 const FilterAndSearch: React.FC<{ onSearch: (query: string, sortBy: string) => void }> = ({ onSearch }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -39,6 +38,7 @@ const SearchScreen: React.FC<{ onClose: () => void; onApply: (query: string, sor
         onChange={(e) => setSearchQuery(e.target.value)}
         className="w-full p-2 border rounded-md"
       />
+      <label htmlFor="sortBy" className="font-medium">Sort By</label>
       <select
         value={sortBy}
         onChange={(e) => setSortBy(e.target.value)}
