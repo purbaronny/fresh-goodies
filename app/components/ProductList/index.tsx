@@ -149,7 +149,8 @@ const ProductList: React.FC<ProductListProps> = ({ searchQuery, sortBy }) => {
       </div>
     );
     console.log("jah99:: " + searchQuery);
-  if (!activeCategory) {
+    console.log("jah99activeCategory:: " + activeCategory);
+  if (!activeCategory && searchQuery.trim().length == 0) {
     console.log("jah1000000:: " + searchQuery);
     return (
       <div className={cn("py-5 px-4 flex flex-col gap-5", !isCartEmpty ? "pb-32" : "")}>
