@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "479d2bee-a765-429a-adfb-f52b5f0a11e3",
+		"name": "Fresh-Goodies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14245500"
+	},
+	"item": [
+		{
+			"name": "Favorite-Products",
+			"item": [
+				{
+					"name": "favorite-products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/favorite-products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"favorite-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorite-products-id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/favorite-products/4b63",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"favorite-products",
+								"4b63"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorite-products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/favorite-products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"favorite-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorite-products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/favorite-products/5849",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"favorite-products",
+								"5849"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "favorite-products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/favorite-products/b917",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"favorite-products",
+								"b917"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "cart",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cart",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cart/2a34",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cart",
+								"2a34"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cart-id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cart",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"0\",\r\n    \"quantity\": 1200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cart",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{base_url}}/cart Copy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"0\",\r\n    \"quantity\": 2200\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/cart/d01c",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"cart",
+								"d01c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products?_page=2&_per_page=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "_page",
+									"value": "2"
+								},
+								{
+									"key": "_per_page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products-id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/ff72",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"ff72"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products-id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/a234",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"a234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 0.0033,\r\n    \"weight\": 1300,\r\n    \"name\": \"Cucumber\",\r\n    \"category\": \"Fresh Veggie\",\r\n    \"imageUrl\": \"/products/cucumber.png\",\r\n    \"metadata\": {\r\n        \"unit\": \"g\",\r\n        \"weight\": 100,\r\n        \"calorie\": 16,\r\n        \"proteins\": 0.7,\r\n        \"fats\": 0.1,\r\n        \"increment\": 100,\r\n        \"carbs\": 3.6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 1.0033,\r\n    \"weight\": 1300,\r\n    \"name\": \"Cucumber\",\r\n    \"category\": \"Fresh Veggie\",\r\n    \"imageUrl\": \"/products/cucumber.png\",\r\n    \"metadata\": {\r\n        \"unit\": \"g\",\r\n        \"weight\": 100,\r\n        \"calorie\": 16,\r\n        \"proteins\": 0.7,\r\n        \"fats\": 0.1,\r\n        \"increment\": 100,\r\n        \"carbs\": 3.6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/products/ff72",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"ff72"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
